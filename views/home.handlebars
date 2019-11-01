@@ -1,0 +1,14 @@
+{{#each data}}
+<div class='book'>
+	<h3 class="title">{{this.title}}</h3>
+    <em>By {{this.author}}</em>
+	<div class="content">
+	    <p>Genre: <em>{{this.genre}}</em></p>
+ 	    <p>Year Published: <em>{{this.year}}</em></p>
+        <h4>Descriptors</h4>
+        {{#each this.descriptors}}
+        <p>{{this}}</p>
+        {{/each}} 
+        <hr>
+	</div>
+{{/each}}

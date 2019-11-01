@@ -1,0 +1,11 @@
+{"books":
+    [{"title": "Jane Eyre", "author": "Charlotte Bronte", "year": 1847, 
+    "genre": "Realistic Fiction", "descriptors": ["well-written"]},
+    {"title": "The Testaments", "author": "Margaret Atwood", "year": 2019, 
+        "genre": "Realistic Fiction", "descriptors": ["good!"]},
+    {"title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "year": 1954, 
+        "genre": "Fantasy", "descriptors": ["boring", "long"]},        
+    {"title": "Animal Farm", "author": "George Orwell", "year": 1945, 
+        "genre": "Science Fiction", "descriptors": ["weird"]}        
+        ]
+}

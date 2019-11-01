@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+  <title>Final Project</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+</head>
+
+<div class="nav">
+  <div>
+    <a href="/historicalReads">Historical Reads</a>
+    <a href="/genre">Search by Genre</a>
+    <a href="/recent">Recent</a>
+    <a href="/alphabetical">Alphabetical</a>
+    <a href="/random">Random</a>
+  </div>
+</div>
+
+<body>
+    <script>
+    function filter() {
+      var input = document.getElementById('user-input').value;
+      var elems = document.getElementsByClassName('book');
+      for (var i = 0; i < elems.length; i++) {
+        var curr = elems[i]; 
+        var title = curr.getElementsByClassName('title')[0];
+        var txt = title.textContent || title.innerText;
+        if (txt.indexOf(input) <=-1) {
+          console.log(parseInt(i) + " " + txt)
+          curr.style.display = "none";
+        } else {
+          curr.style.display = "";
+        }
+      }
+    }
+
+    function create() {
+      document.getElementById('createNew').href = '';
+      var url = document.URL + "create";
+      document.getElementById('createNew').href = url;
+    }
+ 
+  </script>
+
+  <a id="createNew" href="">  <button type="button" onclick="create()">Enter a Book Review</button>
+</a>
+ 
+ 
+  <form>
+    Search by title: 
+    <input id="user-input" type="text" onkeyup="filter()">
+  </form>
+  
+   {{{body}}}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+</body>
+
+</html>
