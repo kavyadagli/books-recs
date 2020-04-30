@@ -13,7 +13,7 @@
         "body-parser": "^1.17.1",
         "express": "^4.15.2",
         "express-handlebars": "^3.0.0",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "jsdom": "^15.2.0",
         "morgan": "^1.8.1",
         "underscore": "^1.9.1"
