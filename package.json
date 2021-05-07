@@ -16,6 +16,6 @@
         "jquery": "^3.4.1",
         "jsdom": "^15.2.0",
         "morgan": "^1.8.1",
-        "underscore": "^1.9.1"
+        "underscore": "^1.12.1"
     }
 }
