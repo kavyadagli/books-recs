@@ -11,7 +11,7 @@
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.17.1",
-        "express": "^4.15.2",
+        "express": "^4.17.3",
         "express-handlebars": "^3.0.0",
         "jquery": "^3.4.1",
         "jsdom": "^15.2.0",
